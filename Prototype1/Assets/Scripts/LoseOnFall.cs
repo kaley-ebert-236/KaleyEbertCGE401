@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Kaley Ebert)
+* (Assignment 2 (Prototype 1 & Challenge 1)
+* (Puts up Game Over when falling off side)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

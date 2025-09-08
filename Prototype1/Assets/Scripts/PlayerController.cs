@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Kaley Ebert)
+* (Assignment 2 (Prototype 1 & Challenge 1)
+* (Controls for Player)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

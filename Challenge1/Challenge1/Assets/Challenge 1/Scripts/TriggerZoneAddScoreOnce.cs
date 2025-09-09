@@ -1,6 +1,6 @@
 ﻿/*
 * (Kaley Ebert)
-* (Assignment 2 - Prototype 1)
+* (Assignment 2 - Challenge 1)
 * (Increases the score with each trigger zone)
 */
 using System.Collections;

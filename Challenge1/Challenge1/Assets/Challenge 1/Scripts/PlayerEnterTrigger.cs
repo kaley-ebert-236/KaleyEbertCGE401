@@ -1,13 +1,13 @@
 ﻿/*
 * (Kaley Ebert)
-* (Assignment 2 - Prototype 1)
+* (Assignment 2 - Challenge 1)
 * (Score goes up entering trigger zone)
 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//attach this to the player
+//Attach this to the player
 public class PlayerEnterTrigger : MonoBehaviour
 {
 
@@ -18,6 +18,4 @@ public class PlayerEnterTrigger : MonoBehaviour
             ScoreManager.score++;
         }
     }
-
-
 }

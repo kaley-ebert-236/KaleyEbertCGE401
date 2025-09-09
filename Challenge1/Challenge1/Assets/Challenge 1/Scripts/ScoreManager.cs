@@ -1,6 +1,6 @@
 ﻿/*
 * (Kaley Ebert)
-* (Assignment 2 - Prototype 1)
+* (Assignment 2 - Challenge 1)
 * (Score Manager, increases the score, resets the game properly)
 */
 using System.Collections;
@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
+
     public static bool gameOver;
     public static bool won;
     public static int score;
@@ -27,14 +28,14 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the game is not over, display score
+        //if the game is not over display score
         if (!gameOver)
         {
             textbox.text = "Score: " + score;
         }
 
-        //win condition: 3 or more points
-        if (score >=3)
+        //win condition 5 or more points 
+        if (score >=5)
         {
             won = true;
             gameOver = true;
@@ -55,6 +56,5 @@ public class ScoreManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
-
     }
 }

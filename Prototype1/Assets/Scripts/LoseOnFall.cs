@@ -1,7 +1,7 @@
 ﻿/*
 * (Kaley Ebert)
-* (Assignment 2 (Prototype 1 & Challenge 1)
-* (Puts up Game Over when falling off side)
+* (Assignment 2 - Prototype 1)
+*Lose Condition - Fall Off Sides)
 */
 using System.Collections;
 using System.Collections.Generic;

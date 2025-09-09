@@ -1,6 +1,6 @@
 ﻿/*
 * (Kaley Ebert)
-* (Assignment 2 (Prototype 1 & Challenge 1)
+* (Assignment 2 - Prototype 1)
 * (Controls for Player)
 */
 using System.Collections;

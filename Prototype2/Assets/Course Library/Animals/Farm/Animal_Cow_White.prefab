@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 424314}
   - component: {fileID: 9585270}
+  - component: {fileID: 1457836240}
+  - component: {fileID: 1457836243}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Untagged
@@ -57,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 102230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
+  m_LocalScale: {x: 0.10011601, y: 0.10011601, z: 0.10011601}
   m_Children:
   - {fileID: 468246}
   m_Father: {fileID: 0}
@@ -82,6 +84,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1457836240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57af2f8cc3c3e694d8791bcdcf8644f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+--- !u!114 &1457836243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc127ac999356194d811b054164aa908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBound: 20
+  bottomBound: -10
 --- !u!1 &102342
 GameObject:
   m_ObjectHideFlags: 0

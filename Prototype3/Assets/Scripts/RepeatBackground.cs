@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Prototype 3
+Repeats the background to give illusion of it moving
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

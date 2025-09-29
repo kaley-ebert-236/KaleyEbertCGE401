@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Prototype 3
+Trigger zones that will increment score
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

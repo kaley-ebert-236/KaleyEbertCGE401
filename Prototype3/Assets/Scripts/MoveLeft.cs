@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Prototype 3
+Moves the repeating background left 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

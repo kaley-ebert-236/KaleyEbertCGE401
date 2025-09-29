@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Prototype 3
+Spawns manager for obstacles
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

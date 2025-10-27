@@ -1,3 +1,8 @@
+/*
+Kaley Ebert
+Assignment 5B
+Code for the gun, particle blasts, and that all works out
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

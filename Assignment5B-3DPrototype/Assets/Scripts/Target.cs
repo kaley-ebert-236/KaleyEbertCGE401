@@ -1,3 +1,8 @@
+/*
+Kaley Ebert
+Assignment 5B
+Shooting game objects, they're health
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

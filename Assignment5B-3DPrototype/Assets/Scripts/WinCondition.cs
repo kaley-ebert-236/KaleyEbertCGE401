@@ -1,3 +1,8 @@
+/*
+Kaley Ebert
+Assignment 5B
+Win condition for the end of the level, pass through triggerzone to show "You Win!"
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

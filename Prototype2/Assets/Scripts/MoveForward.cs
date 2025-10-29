@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 3
+Moves the cow, horse, and moose prefabs down towards the player 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 3
+Detects any collison between the pizza and the animals
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

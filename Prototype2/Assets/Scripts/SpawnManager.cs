@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 3
+Spawns the pizza and animals 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,8 +17,13 @@ public class SpawnManager : MonoBehaviour
     private float rightBound = 14;
     private float spawnPosZ = 20;
 
+    public HealthSystem healthSystem;
+
     void Start()
     {
+        //Get a reference to the HealthSystem script
+        healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+
         //InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
 
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
@@ -25,7 +35,7 @@ public class SpawnManager : MonoBehaviour
         //add a 3 second delay before first spawning object
         yield return new WaitForSeconds(3f);
 
-        while (true)
+        while (!healthSystem.gameOver)
         {
             SpawnRandomPrefab();
 

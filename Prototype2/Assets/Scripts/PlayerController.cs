@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 3
+Controls to use to move the player, how fast they go  
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

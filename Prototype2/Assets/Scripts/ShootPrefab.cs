@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 3
+Shoots the pizzas out, using the prefabs list 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

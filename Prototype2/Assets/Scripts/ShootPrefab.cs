@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Shoots the pizzas out, using the prefabs list 
 */
 using System.Collections;

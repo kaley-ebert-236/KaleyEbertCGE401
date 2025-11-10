@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Displays the score 
 */
 using System.Collections;

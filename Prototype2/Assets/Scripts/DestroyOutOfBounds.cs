@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Destroys the pizza and the animal prefabs once they are out of bounds 
 */
 using System.Collections;
@@ -9,7 +9,6 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-
     public float topBound = 20;
     public float bottomBound = -10;
 
@@ -19,6 +18,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     {
         healthSystemScript = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
     }
+
     // Update is called once per frame
     void Update()
     {

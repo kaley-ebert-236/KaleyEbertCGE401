@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Spawns the pizza and animals 
 */
 using System.Collections;

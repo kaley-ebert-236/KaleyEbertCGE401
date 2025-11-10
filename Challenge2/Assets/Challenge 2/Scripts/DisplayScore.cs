@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 2
+Displays the score 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

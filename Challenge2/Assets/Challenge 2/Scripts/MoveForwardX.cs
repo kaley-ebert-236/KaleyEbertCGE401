@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 2
+ Moves the dog and ball
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

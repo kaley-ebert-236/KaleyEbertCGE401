@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Moves the cow, horse, and moose prefabs down towards the player 
 */
 using System.Collections;

@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Detects any collison between the pizza and the animals
 */
 using System.Collections;

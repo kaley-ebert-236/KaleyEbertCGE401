@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 2
+Controls the health system and hearts 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

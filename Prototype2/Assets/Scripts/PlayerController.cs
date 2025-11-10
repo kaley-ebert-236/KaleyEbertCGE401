@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Controls to use to move the player, how fast they go  
 */
 using System.Collections;

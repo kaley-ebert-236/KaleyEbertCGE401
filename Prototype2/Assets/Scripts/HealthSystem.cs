@@ -1,6 +1,6 @@
 ﻿/*
 Kaley Ebert
-Assignment 3
+Prototype 2
 Controls the health system and hearts 
 */
 //This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc

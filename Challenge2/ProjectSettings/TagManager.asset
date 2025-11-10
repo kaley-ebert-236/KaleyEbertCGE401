@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dog
   - HealthSystem
+  - DisplayScoreText
   layers:
   - Default
   - TransparentFX

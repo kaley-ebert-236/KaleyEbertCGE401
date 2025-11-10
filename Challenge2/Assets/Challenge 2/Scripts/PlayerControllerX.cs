@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 2
+Controls to use to move the player  
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

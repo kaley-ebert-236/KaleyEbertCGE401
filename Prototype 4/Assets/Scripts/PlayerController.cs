@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
-    private ScoreManager scoreManager;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         playerRB = GetComponent<Rigidbody>();
         focalPoint = GameObject.FindGameObjectWithTag("FocalPoint");
 
-        scoreManager = FindObjectOfType<ScoreManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
             if (other.CompareTag("Enemy"))
             {
-                scoreManager.AddScore(1);
+                gameManager.AddScore(1);
                 Destroy(other.gameObject);
             }
         }

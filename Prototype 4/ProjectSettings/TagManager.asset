@@ -9,6 +9,7 @@ TagManager:
   - SpawnManager
   - Powerup
   - FallZone
+  - LoseText
   layers:
   - Default
   - TransparentFX

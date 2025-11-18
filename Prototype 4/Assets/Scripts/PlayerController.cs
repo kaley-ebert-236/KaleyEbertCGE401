@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
     private GameManager gameManager;
 
+    public bool gameOver = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,12 +53,15 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(PowerupCountdownRoutine());
             powerupIndicator.gameObject.SetActive(true);
 
-            if (other.CompareTag("Enemy"))
-            {
-                gameManager.AddScore(1);
-                Destroy(other.gameObject);
-            }
+        
         }
+        
+        if (other.CompareTag("Enemy"))
+        {
+            gameManager.AddScore(1);
+            Destroy(other.gameObject);
+        }
+        
     }
 
     IEnumerator PowerupCountdownRoutine()

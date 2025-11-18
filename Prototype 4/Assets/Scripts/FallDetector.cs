@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FallDetector : MonoBehaviour
 {
-    public GameManager gameManager;
+    //public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class FallDetector : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            gameManager.AddScore(1);
+            //gameManager.AddScore(1);
             Debug.Log("Object fell! Score increased");
             
             Destroy(other.gameObject);

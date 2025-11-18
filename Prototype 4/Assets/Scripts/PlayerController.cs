@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public bool hasPowerup;
 
+    private float powerupStrength = 15.0f;
+
+    public GameObject powerupIndicator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         forwardInput = Input.GetAxis("Vertical");
+
+        //move our powerupIndicator to the ground below our player
+        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
     }
 
 
@@ -37,7 +44,16 @@ public class PlayerController : MonoBehaviour
         {
             hasPowerup = true;
             Destroy(other.gameObject);
+            StartCoroutine(PowerupCountdownRoutine());
+            powerupIndicator.gameObject.SetActive(true);
         }
+    }
+
+    IEnumerator PowerupCountdownRoutine()
+    {
+        yield return new WaitForSeconds(7);
+        hasPowerup = false;
+        powerupIndicator.gameObject.SetActive(false);
     }
  
     private void OnCollisionEnter(Collision collision)
@@ -45,6 +61,16 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && hasPowerup)
         {
             Debug.Log("Player collided with: " + collision.gameObject.name + " with powerup set to " + hasPowerup);
+
+            //get a local reference to the enemy rigidbody
+            Rigidbody enemyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Set a Vector 3 with a direction away from the player
+            Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position).normalized;
+
+            //Add and Impulse force to the enemy away from the player
+            //(an impulse force is instant and uses mass)
+            enemyRigidbody.AddForce(awayFromPlayer * powerupStrength, ForceMode.Impulse);
         }
     }
 }

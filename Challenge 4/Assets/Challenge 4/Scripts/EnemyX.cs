@@ -11,6 +11,8 @@ public class EnemyX : MonoBehaviour
     public SpawnManagerX spawnX;
     public float levelSpeedIncreaser = 60.0f;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,11 @@ public class EnemyX : MonoBehaviour
         Vector3 lookDirection = (playerGoal.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed * Time.deltaTime);
 
+        if (allEnemiesDefeated)
+        {
+            gameManager.NextWave();
+        }
+
     }
 
     private void OnCollisionEnter(Collision other)
@@ -44,4 +51,14 @@ public class EnemyX : MonoBehaviour
 
     }
 
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            FindObjectOfType<WaveDisplay>().AddScore(1);
+            Destroy(other.gameObject);
+        }
+    }
+    */
 }

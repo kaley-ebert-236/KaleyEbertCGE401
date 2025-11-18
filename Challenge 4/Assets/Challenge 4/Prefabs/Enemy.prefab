@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  spawnX: {fileID: 0}
+  levelSpeedIncreaser: 60

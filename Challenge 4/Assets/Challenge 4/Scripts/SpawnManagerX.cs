@@ -15,7 +15,7 @@ public class SpawnManagerX : MonoBehaviour
     public int waveCount = 1;
 
 
-    public GameObject player; 
+    public GameObject player;
 
     // Update is called once per frame
     void Update()
@@ -26,7 +26,6 @@ public class SpawnManagerX : MonoBehaviour
         {
             SpawnEnemyWave(waveCount);
         }
-
     }
 
     // Generate random spawn position for powerups and enemy balls
@@ -68,4 +67,11 @@ public class SpawnManagerX : MonoBehaviour
 
     }
 
+    /*
+    void OnTriggerEnter(Collider other)
+    {
+        FindObjectOfType<GameManager>().NextWave();
+
+    }
+    */
 }

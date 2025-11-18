@@ -12,6 +12,7 @@ TagManager:
   - WaveManager
   - WaveText
   - MessageText
+  - WaveCounterText
   layers:
   - Default
   - TransparentFX

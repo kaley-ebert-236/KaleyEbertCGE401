@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyGoal : MonoBehaviour
 {
-    private GameManager gameManager;
+    //private GameManager gameManager;
 
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        //gameManager = FindObjectOfType<GameManager>();
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))
@@ -19,4 +20,5 @@ public class EnemyGoal : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+    */
 }

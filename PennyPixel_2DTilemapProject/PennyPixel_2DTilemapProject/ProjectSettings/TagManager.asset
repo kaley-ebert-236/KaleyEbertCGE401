@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Through
   - Gem
-  - DisplayScoreText
   - DisplayScore
+  - ScoreText
+  - ScoreManager
   layers:
   - Default
   - TransparentFX

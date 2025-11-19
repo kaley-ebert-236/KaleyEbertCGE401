@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2377532578624828588}
   - component: {fileID: 2411789789047915474}
   - component: {fileID: 2323611936425666320}
+  - component: {fileID: 3195997855582836391}
   m_Layer: 0
   m_Name: CollectableGem
   m_TagString: Gem
@@ -75,6 +76,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.23
+--- !u!114 &3195997855582836391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371407392624453514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702b9901e57de514f8fee19fda3021a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2371831993954349806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,6 +5115,7 @@ GameObject:
   - component: {fileID: 2373022493735914108}
   - component: {fileID: 2373022493735914107}
   - component: {fileID: 2373022493735914106}
+  - component: {fileID: 3726707622120058184}
   m_Layer: 0
   m_Name: GemMesh (1)
   m_TagString: Untagged
@@ -5182,6 +5196,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 200
   rotateDirection: {x: 0, y: 0, z: 1}
+--- !u!114 &3726707622120058184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373022493735914104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702b9901e57de514f8fee19fda3021a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2373022493757311926
 GameObject:
   m_ObjectHideFlags: 0

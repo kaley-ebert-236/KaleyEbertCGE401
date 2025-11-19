@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
             textbox.text = "Score: " + score;
         }
 
-        //win condition: 3 or more points
+        //win condition: 10 or more points
         if (score >= 10)
         {
             won = true;

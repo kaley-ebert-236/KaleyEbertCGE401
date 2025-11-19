@@ -9,6 +9,7 @@ TagManager:
   - DisplayScore
   - ScoreText
   - ScoreManager
+  - TriggerZone
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class GameManager : Momobehavior
+public class GameManager : MonoBehaviour
 {
     public int score;
 

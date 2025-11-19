@@ -15,8 +15,9 @@ public class TriggerZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Finish"))
+        if (other.CompareTag("TriggerZone"))
         {
+            //textbox.text = "You Win!";
             ScoreManager.score++;
         }
     }

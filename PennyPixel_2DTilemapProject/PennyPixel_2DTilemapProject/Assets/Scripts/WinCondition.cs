@@ -5,25 +5,17 @@ using UnityEngine.UI;
 
 public class WinCondition : MonoBehaviour
 {
-    public GameObject winTextGameObject;
+    public GameObject winPanel;
 
-    void Start()
-    {
-        if (winTextGameObject != null)
-        {
-            winTextGameObject.SetActive(false);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (winTextGameObject != null)
+            if (winPanel != null)
             {
-                winTextGameObject.SetActive(true);
+                winPanel.SetActive(true);
             }
-            Debug.Log("Player entered the win zone!");
         }
     }
+  
 }

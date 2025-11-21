@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TilemapStart.unity
     guid: ef45bf5a1fe6d0c47ae7f84da2cee641
+  - enabled: 1
+    path: Assets/Scenes/Finished - Assignemt 5A.unity
+    guid: 182ed6e0af749e842bcc09264db6ec6c
   m_configObjects: {}

@@ -28,13 +28,14 @@ public class ScoreManager : MonoBehaviour
             textbox.text = "Score: " + score;
         }
 
-        //win condition: 10 or more points
-        if (score >= 10)
+        //win condition: 12 or more points
+        if (score >= 12)
         {
             won = true;
             gameOver = true;
         }
 
+        
         if (gameOver)
         {
             if (won)
@@ -50,6 +51,7 @@ public class ScoreManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
+        
 
     }
 }

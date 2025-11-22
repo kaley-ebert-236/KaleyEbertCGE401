@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WaveManager : MonoBehaviour
 {
     public Text waveCounterText;
-    private int currentWave = 0;
+    private int currentWave = 1;
 
     public void StartNewWave()
     {
@@ -32,6 +32,4 @@ public class WaveManager : MonoBehaviour
     {
         StartNewWave();
     }
-
-    
 }

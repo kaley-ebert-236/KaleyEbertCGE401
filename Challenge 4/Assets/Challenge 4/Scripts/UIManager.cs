@@ -19,4 +19,5 @@ public class UIManager : MonoBehaviour
             waveCounterText.text = "Wave: " + waveNumber.ToString();
         }
     }
+   
 }

@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
         
     }
 
-    public void UpdateWaveText(int waveNumber)
+    public void UpdateWaveText(int waveCounterText)
     {
         if (waveCounterText != null)
         {

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGoal : MonoBehaviour
-{
-    //private GameManager gameManager;
+{/*
+    private GameManager gameManager;
 
     void Start()
     {
-        //gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
-    /*
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))
         {
-            gameManager.EnemyEscaped();
+            gameManager.EnemyReachedGoal();
             Destroy(other.gameObject);
         }
     }
-    */
+   */ 
 }

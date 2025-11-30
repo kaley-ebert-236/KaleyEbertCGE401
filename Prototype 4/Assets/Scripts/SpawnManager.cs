@@ -9,12 +9,14 @@ public class SpawnManager : MonoBehaviour
     private float spawnRange = 9;
 
     public int enemyCount;
-    public int waveNumber = 1;
+    public int currentWave = 0;
+
+    //public UIManager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemyWave(waveNumber);
+        SpawnEnemyWave(currentWave);
         SpawnPowerup(1);
     }
 
@@ -25,6 +27,10 @@ public class SpawnManager : MonoBehaviour
             //instantiate the enemy in the random position
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
+
+        //currentWave++;
+        //uiManager.UpdateWaveText(currentWave);
+
     }
 
     private void SpawnPowerup(int powerupsToSpawn)
@@ -52,8 +58,8 @@ public class SpawnManager : MonoBehaviour
 
         if (enemyCount == 0)
         {
-            waveNumber++;
-            SpawnEnemyWave(waveNumber);
+            currentWave++;
+            SpawnEnemyWave(currentWave);
             SpawnPowerup(1);
         }
     }

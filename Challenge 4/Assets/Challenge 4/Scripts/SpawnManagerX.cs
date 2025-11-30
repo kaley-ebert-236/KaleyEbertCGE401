@@ -12,9 +12,10 @@ public class SpawnManagerX : MonoBehaviour
     private float spawnZMax = 25; // set max spawn Z
 
     public int enemyCount;
-    public int waveCount;
+    public int waveCount = 0;
 
     public UIManager uiManager;
+    //public GameManager gameManager;
 
 
     public GameObject player;
@@ -58,7 +59,6 @@ public class SpawnManagerX : MonoBehaviour
         waveCount++;
         ResetPlayerPosition(); // put player back at start
         uiManager.UpdateWaveText(waveCount);
-
     }
 
     // Move player back to position in front of own goal
@@ -69,12 +69,4 @@ public class SpawnManagerX : MonoBehaviour
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
     }
-
-    /*
-    void OnTriggerEnter(Collider other)
-    {
-        FindObjectOfType<GameManager>().NextWave();
-
-    }
-    */
 }

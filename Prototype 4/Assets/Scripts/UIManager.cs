@@ -6,8 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public Text scoreText;
-    public int score = 0;
+    /*
+    public Text waveCounterText;
+
+    public void UpdateWaveText(int currentWave)
+    {
+        if (waveCounterText != null)
+        {
+            waveCounterText.text = "Wave: " + currentWave.ToString();
+        }
+    }
+}*/
+
+
+    public Text waveText;
+    public int wave = 1;
 
     public PlayerController playerControllerScript;
 
@@ -16,9 +29,9 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (scoreText == null)
+        if (waveText == null)
         {
-            scoreText = FindObjectOfType<Text>();
+            waveText = FindObjectOfType<Text>();
         }
 
         if (playerControllerScript == null)
@@ -26,7 +39,7 @@ public class UIManager : MonoBehaviour
             playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         }
 
-        scoreText.text = "Score: 0";
+        waveText.text = "Wave: 1";
     }
 
     // Update is called once per frame
@@ -35,24 +48,24 @@ public class UIManager : MonoBehaviour
         //Display score until game is over
         if (!playerControllerScript.gameOver)
         {
-            scoreText.text = "Score: " + score;
+            waveText.text = "Wave: " + wave;
         }
 
         //loss Condition: Hit the obstacle 
         if (playerControllerScript.gameOver && !won)
         {
-            scoreText.text = "You Lose!\nPress R to Try Again!";
+            waveText.text = "You Lose!\nPress R to Try Again!";
         }
 
         //win Condition: 10 points
-        if (score >= 10)
+        if (wave >= 10)
         {
             playerControllerScript.gameOver = true;
             won = true;
 
             //Stop player running 
 
-            scoreText.text = "You Win!\nPress R to Try Again!";
+            waveText.text = "You Win!\nPress R to Try Again!";
 
         }
 

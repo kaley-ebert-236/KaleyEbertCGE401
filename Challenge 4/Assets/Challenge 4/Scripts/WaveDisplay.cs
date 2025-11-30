@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WaveDisplay : MonoBehaviour
 {
     public Text waveText;
-    public int currentWave = 1;
+    public int currentWave;
 
     void Awake()
     {

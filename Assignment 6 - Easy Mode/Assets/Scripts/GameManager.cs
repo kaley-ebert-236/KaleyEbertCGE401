@@ -30,6 +30,24 @@ public class GameManager : MonoBehaviour
         }
     }
     #endregion
+    public static GameManager Instance;
+
+    /*
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            //make sure this game manager persists across scenes 
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameOjbect);
+            Debug.LogError("Trying to instantiate a second" + "instance of singleton Game Manager");
+        }
+    }
+    */
 
     //methods to load and unload scenes
     public void LoadLevel(string levelName)

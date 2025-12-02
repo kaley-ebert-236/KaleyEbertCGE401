@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ Kaley Ebert
+Assignment 8 - Prototype 5
+Manages score, gameover, restart, game difficulty, spawn rate 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;

@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ Kaley Ebert
+Assignment 8 - Prototype 5
+Manages the spawning of items, how they move, their particle systems, and mouse controls
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

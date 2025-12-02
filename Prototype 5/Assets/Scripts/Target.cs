@@ -52,16 +52,23 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        gameManager.UpdateScore(pointValue);
+        if (gameManager.isGameActive)
+        {
+            gameManager.UpdateScore(pointValue);
 
-        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-        
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
+
         Destroy(gameObject);
     }
 

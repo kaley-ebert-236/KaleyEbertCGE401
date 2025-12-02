@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 5
+Manages the spawning of items, how they move, their particle systems, and mouse controls
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +32,7 @@ public class TargetX : MonoBehaviour
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+    private void OnMouseDown()
     {
         if (gameManagerX.isGameActive)
         {

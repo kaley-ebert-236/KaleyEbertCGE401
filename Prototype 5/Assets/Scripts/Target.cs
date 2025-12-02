@@ -1,6 +1,6 @@
 ﻿/*
- Kaley Ebert
-Assignment 8 - Prototype 5
+Kaley Ebert
+Prototype 5
 Manages the spawning of items, how they move, their particle systems, and mouse controls
 */
 using System.Collections;

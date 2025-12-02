@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Challenge 5
+Destroys objects and particles
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

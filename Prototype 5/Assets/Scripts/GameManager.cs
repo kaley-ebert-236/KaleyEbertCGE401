@@ -1,6 +1,6 @@
 ﻿/*
- Kaley Ebert
-Assignment 8 - Prototype 5
+Kaley Ebert
+Prototype 5
 Manages score, gameover, restart, game difficulty, spawn rate 
 */
 using System.Collections;

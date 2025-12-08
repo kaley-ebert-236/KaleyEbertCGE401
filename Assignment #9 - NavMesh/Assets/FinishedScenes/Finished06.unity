@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 13700000, guid: 7e15121f5f042ed46aba81406403f2d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2019ad135fac453488b693f57027201c, type: 2}
+      objectReference: {fileID: 2100000, guid: f343d980d6a4a9842b7fbf651de99d81, type: 2}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 7e15121f5f042ed46aba81406403f2d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7e15121f5f042ed46aba81406403f2d2, type: 3}
@@ -293,8 +293,8 @@ GameObject:
   - component: {fileID: 639052944}
   - component: {fileID: 639052943}
   - component: {fileID: 639052942}
-  - component: {fileID: 639052941}
   - component: {fileID: 639052940}
+  - component: {fileID: 639052941}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -319,8 +319,8 @@ MonoBehaviour:
   m_JumpPower: 6
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
+  m_MoveSpeedMultiplier: 0.8
+  m_AnimSpeedMultiplier: 0.8
   m_GroundCheckDistance: 0.2
 --- !u!114 &639052941
 MonoBehaviour:
@@ -331,12 +331,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 639052939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de7528a76fe18a44bf742acc22ab049, type: 3}
+  m_Script: {fileID: 11500000, guid: 7855e4c3612d76244ba3d8092f5dd81a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   agent: {fileID: 0}
   character: {fileID: 0}
+  player: {fileID: 0}
+  chaseDistance: 5
 --- !u!95 &639052942
 Animator:
   serializedVersion: 3
@@ -382,11 +384,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1
+  m_Speed: 0.8
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
+  m_StoppingDistance: 1.1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -416,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639052939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.3, y: 0.54, z: -4.94}
+  m_LocalPosition: {x: -6.24, y: 0.54, z: 0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 243022041}
@@ -640,7 +642,7 @@ GameObject:
   - component: {fileID: 1112826215}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,7 +736,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1
+  m_Speed: 1.5
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -763,8 +765,8 @@ MonoBehaviour:
   m_JumpPower: 6
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
+  m_MoveSpeedMultiplier: 1.5
+  m_AnimSpeedMultiplier: 1.5
   m_GroundCheckDistance: 0.2
 --- !u!1001 &1170267468
 PrefabInstance:

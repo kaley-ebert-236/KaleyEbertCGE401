@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Kaley Ebert
+Assignment 9
+Controls the the player
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
